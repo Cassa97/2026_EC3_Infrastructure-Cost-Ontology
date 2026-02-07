@@ -1,0 +1,2801 @@
+# baseURI: http://example.org/casestudy
+# imports: http://linkedbuildingdata.net/ifc/resources20260119_225341/
+# imports: http://w3id.org/ci
+# imports: http://w3id.org/cr
+# imports: http://w3id.org/cterm
+# prefix: casestudy
+
+@prefix casestudy: <http://example.org/casestudy#> .
+@prefix ci: <https://w3id.org/ci#> .
+@prefix cr: <https://w3id.org/cr#> .
+@prefix cterm: <https://w3id.org/cterm#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/casestudy>
+  rdf:type owl:Ontology ;
+  owl:imports <http://linkedbuildingdata.net/ifc/resources20260119_225341/> ;
+  owl:imports <http://w3id.org/ci> ;
+  owl:imports <http://w3id.org/cr> ;
+  owl:imports <http://w3id.org/cterm> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+casestudy:Activity_1
+  rdf:type ci:Activity ;
+  rdfs:label "Activity_1" ;
+  ci:activityOf casestudy:ConstructionComponent_1 ;
+  ci:descriptionDetail """Install
+Form the joint between the precast foundation element and the precast platform-edge element in accordance with the manufacturer’s installation instructions.
+Observe the manufacturer-specific installation and transport instructions.
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  ci:descriptionGeneral "Install" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/H-PER-M> ;
+  ci:included "Form the joint between the precast foundation element and the precast platform-edge element in accordance with the manufacturer’s installation instructions" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs """Observe the manufacturer-specific installation and transport instructions.
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  cterm:hasCategory cterm:Realization ;
+  cterm:hasFamily cterm:Production ;
+  cterm:hasObject cterm:Installation ;
+  cterm:hasUse casestudy:PrecastFoundationElement ;
+.
+casestudy:Activity_2
+  rdf:type ci:Activity ;
+  rdfs:label "Activity_2" ;
+  ci:activityOf casestudy:ConstructionComponent_2 ;
+  ci:descriptionDetail """Installed on a foundation
+Installation dimensions in accordance with Ril 813.0201A03""" ;
+  ci:descriptionGeneral "Install" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/H-PER-ONE> ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs "Execution as per drawing: Drawing No.: “IseB BSK 7600”" ;
+  cterm:hasCategory cterm:Realization ;
+  cterm:hasFamily cterm:Production ;
+  cterm:hasObject cterm:Installation ;
+  cterm:hasUse casestudy:PrecastPlatformEdge ;
+.
+casestudy:Activity_3
+  rdf:type ci:Activity ;
+  rdfs:label "Activity_3" ;
+  ci:activityOf casestudy:ConstructionComponent_3 ;
+  ci:descriptionDetail """Installed on a foundation
+Installation dimensions in accordance with Ril 813.0201A03""" ;
+  ci:descriptionGeneral "Install" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/H-PER-ONE> ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs "Execution as per drawing: Drawing No.: “IseB BSK 7600”" ;
+  cterm:hasCategory cterm:Realization ;
+  cterm:hasFamily cterm:Production ;
+  cterm:hasObject cterm:Installation ;
+  cterm:hasUse casestudy:PrecastCornerElement ;
+.
+casestudy:Activity_4
+  rdf:type ci:Activity ;
+  rdfs:label "Activity_4" ;
+  ci:activityOf casestudy:ConstructionComponent_4 ;
+  ci:descriptionDetail """Demolition, as part of a total demolition measure.
+The foundation is paid for separately.
+Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted.
+Collect removed materials without crushing, load onto the Contractor’s vehicle or stockpile temporarily.
+Disposal is paid for separately.""" ;
+  ci:descriptionGeneral "Demolition" ;
+  ci:excluded "foundation demolition, disposal" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/H-PER-M> ;
+  ci:included "collect removed materials without crushing, load onto the Contractor's vehicle or stockpile temporary" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs "Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted" ;
+  cterm:hasCategory cterm:Demolition ;
+  cterm:hasFamily cterm:Modification ;
+  cterm:hasObject cterm:Demolition ;
+  cterm:hasUse casestudy:PrecastPlatformEdge ;
+.
+casestudy:Activity_5
+  rdf:type ci:Activity ;
+  rdfs:label "Activity_5" ;
+  ci:activityOf casestudy:ConstructionComponent_5 ;
+  ci:descriptionDetail """Demolition, as part of a total demolition measure.
+The foundation is paid for separately.
+Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted.
+Collect removed materials without crushing, load onto the Contractor’s vehicle or stockpile temporarily.
+Disposal is paid for separately.""" ;
+  ci:descriptionGeneral "Demolition" ;
+  ci:excluded "foundation demolition, disposal" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/H-PER-M3> ;
+  ci:included "collect removed materials without crushing, load onto the Contractor's vehicle or stockpile temporary" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs """Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  cterm:hasCategory cterm:Demolition ;
+  cterm:hasFamily cterm:Modification ;
+  cterm:hasObject cterm:Demolition ;
+  cterm:hasUse casestudy:PrecastPlatformEdge ;
+.
+casestudy:AssignmentSet_1
+  rdf:type cr:AssignmentSet ;
+  rdfs:label "Assignment Set of Precast Foundation Element" ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_1 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_10 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_100 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_101 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_102 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_103 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_104 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_105 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_106 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_107 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_108 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_109 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_11 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_110 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_111 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_112 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_113 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_114 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_115 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_116 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_117 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_118 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_119 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_12 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_120 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_121 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_122 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_123 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_124 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_125 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_126 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_127 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_128 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_129 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_13 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_130 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_131 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_132 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_133 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_134 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_135 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_136 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_137 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_138 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_139 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_14 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_15 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_16 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_17 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_18 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_19 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_2 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_20 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_21 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_22 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_23 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_24 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_25 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_26 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_27 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_28 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_29 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_3 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_30 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_31 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_32 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_33 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_34 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_35 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_36 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_37 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_38 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_39 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_4 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_40 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_41 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_42 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_43 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_44 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_45 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_46 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_47 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_48 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_49 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_5 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_50 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_51 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_52 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_53 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_54 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_55 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_56 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_57 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_58 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_59 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_6 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_60 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_61 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_62 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_63 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_64 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_65 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_66 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_67 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_68 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_69 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_7 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_70 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_71 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_72 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_73 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_74 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_75 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_76 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_77 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_78 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_79 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_8 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_80 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_81 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_82 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_83 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_84 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_85 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_86 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_87 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_88 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_89 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_9 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_90 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_91 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_92 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_93 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_94 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_95 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_96 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_97 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_98 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_99 ;
+.
+casestudy:AssignmentSet_2
+  rdf:type cr:AssignmentSet ;
+  rdfs:label "Assignment Set of Precast Platform Edge" ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_140 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_141 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_142 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_143 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_144 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_145 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_146 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_147 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_148 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_149 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_150 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_151 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_152 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_153 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_154 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_155 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_156 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_157 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_158 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_159 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_160 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_161 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_162 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_163 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_164 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_165 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_166 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_167 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_168 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_169 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_170 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_171 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_172 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_173 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_174 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_175 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_176 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_177 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_178 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_179 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_180 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_181 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_182 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_183 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_184 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_185 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_186 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_187 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_188 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_189 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_190 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_191 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_192 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_193 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_194 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_195 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_196 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_197 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_198 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_199 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_200 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_201 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_202 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_203 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_204 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_205 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_206 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_207 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_208 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_209 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_210 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_211 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_212 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_213 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_214 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_215 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_216 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_217 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_218 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_219 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_220 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_221 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_222 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_223 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_224 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_225 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_226 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_227 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_228 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_229 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_230 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_231 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_232 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_233 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_234 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_235 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_236 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_237 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_238 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_239 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_240 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_241 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_242 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_243 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_244 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_245 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_246 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_247 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_248 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_249 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_250 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_251 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_252 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_253 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_254 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_255 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_256 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_257 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_258 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_259 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_260 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_261 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_262 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_263 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_264 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_265 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_266 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_267 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_268 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_269 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_270 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_271 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_272 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_273 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_274 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_275 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_276 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_277 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_278 ;
+.
+casestudy:AssignmentSet_3
+  rdf:type cr:AssignmentSet ;
+  rdfs:label "Assignment Set of Precast Corner Element" ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_279 ;
+  cr:hasAssignment casestudy:CostItemToGeometryAssignment_280 ;
+.
+casestudy:ConstructionComponent_1
+  rdf:type ci:ConstructionComponent ;
+  rdfs:label "ConstructionComponent_1" ;
+  ci:code "MLV-BSK_01130180" ;
+  ci:descriptionDetail """Precast foundation element for platform edge in BSK construction type
+Nominal height: 760 mm above top of rail, with user approvals from the DB InfraGO AG Business Unit Passenger Stations.
+Install a reinforced precast reinforced-concrete element, normal-weight concrete C30/37 in accordance with DIN EN 206-1 and DIN 1045-2, exposure classes XF1, XC2, WF, including recesses for dowelling/anchoring the precast platform-edge elements.
+Form the joint between the precast foundation element and the precast platform-edge element in accordance with the manufacturer’s installation instructions.
+Observe the manufacturer-specific installation and transport instructions.
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  ci:descriptionGeneral "Precast foundation element for platform edge H=760 mm C30/37" ;
+  ci:hasActivity casestudy:Activity_1 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M> ;
+  ci:hasWork casestudy:Work_1 ;
+  ci:measurementRules """Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”
+Attributes correspond to the attributes of the building components from the BIM component library (https://infoplattform-personenbahnhoefe.deutschebahn.com/pbhf/DB-BIM/BIM-Content-DB-Personenbahnhoefe-7719364)""" ;
+  ci:partOf casestudy:CostItem_1 ;
+  ci:quantityUnitOfMeasure 1 ;
+  cterm:hasCategory cterm:Transport ;
+  cterm:hasFamily cterm:Infrastructure ;
+  cterm:hasObject casestudy:Railways ;
+.
+casestudy:ConstructionComponent_2
+  rdf:type ci:ConstructionComponent ;
+  rdfs:label "ConstructionComponent_2" ;
+  ci:code "MLV-BSK_01130050" ;
+  ci:descriptionDetail """Precast platform-edge element in BSK construction type with a nominal height of 760 mm above top of rail, with user approvals from the DB InfraGO AG Business Unit Passenger Stations, installed on a foundation.
+Installation dimensions in accordance with Ril 813.0201A03, including dowels on the foundation.
+At the time of material delivery, the Contractor shall provide the following documentation:
+- Certificate confirming the performance of internal and external quality monitoring/inspection
+- Proof/documentation for aggregates in accordance with DIN EN 12620 and the alkali guideline
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  ci:descriptionGeneral "Precast platform edge BSK construction 760 mm above top of the rail" ;
+  ci:hasActivity casestudy:Activity_2 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/ONE> ;
+  ci:hasWork casestudy:Work_2 ;
+  ci:measurementRules "Number of platform-edge elements" ;
+  ci:partOf casestudy:CostItem_2 ;
+  ci:quantityUnitOfMeasure 1 ;
+  cterm:hasCategory cterm:Transport ;
+  cterm:hasFamily cterm:Infrastructure ;
+  cterm:hasObject casestudy:Railways ;
+.
+casestudy:ConstructionComponent_3
+  rdf:type ci:ConstructionComponent ;
+  rdfs:label "ConstructionComponent_3" ;
+  ci:code "MLV-BSK_01130060" ;
+  ci:descriptionDetail """Corner element for the precast platform-edge element in BSK construction type with a nominal height of 760 mm above top of rail, installed on a foundation.
+Installation dimensions in accordance with Ril 813.0201A03, including dowels on the foundation.
+At the time of material delivery, the Contractor shall provide the following documentation:
+Certificate confirming the performance of internal and external quality monitoring/inspection
+Proof/documentation for aggregates in accordance with DIN EN 12620 and the alkali guideline""" ;
+  ci:descriptionGeneral "Corner element – precast platform-edge element, 760 mm above top of rail" ;
+  ci:hasActivity casestudy:Activity_3 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/ONE> ;
+  ci:hasWork casestudy:Work_3 ;
+  ci:measurementRules "Number of corner elements" ;
+  ci:partOf casestudy:CostItem_3 ;
+  ci:quantityUnitOfMeasure 1 ;
+  cterm:hasCategory cterm:Transport ;
+  cterm:hasFamily cterm:Infrastructure ;
+  cterm:hasObject casestudy:Railways ;
+.
+casestudy:ConstructionComponent_4
+  rdf:type ci:ConstructionComponent ;
+  rdfs:label "ConstructionComponent_4" ;
+  ci:code "MLV-BSK_01840010" ;
+  ci:descriptionDetail """Demolition of platform edge and coping/cover stone, height above top of rail up to 1 m, made of reinforced concrete, as part of a total demolition measure.
+Unit weight of the demolition material in accordance with DIN EN 1991-1-1: 25 kN/m³.
+The foundation is paid for separately.
+Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted.
+Collect removed materials without crushing, load onto the Contractor’s vehicle or stockpile temporarily.
+Disposal is paid for separately.""" ;
+  ci:descriptionGeneral "Demolish platform edge up to a height of 1 m above top of rail" ;
+  ci:hasActivity casestudy:Activity_4 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M> ;
+  ci:hasWork casestudy:Work_4 ;
+  ci:measurementRules """Length (attribute: \"DB_Laenge_Bauteil\") if \"Zustand\" = \"Rueckbau\"
+  Attributes correspond to the attributes of the building components from the BIM component library (https://infoplattform-personenbahnhoefe.deutschebahn.com/pbhf/DB-BIM/BIM-Content-DB-Personenbahnhoefe-7719364)""" ;
+  ci:partOf casestudy:CostItem_4 ;
+  ci:quantityUnitOfMeasure 1 ;
+  cterm:hasCategory cterm:Transport ;
+  cterm:hasFamily cterm:Infrastructure ;
+  cterm:hasObject casestudy:Railways ;
+.
+casestudy:ConstructionComponent_5
+  rdf:type ci:ConstructionComponent ;
+  rdfs:label "ConstructionComponent_5" ;
+  ci:code "MLV-BSK_01840050" ;
+  ci:descriptionDetail """Demolition of platform-edge foundation made of plain (unreinforced) or reinforced concrete, as part of a total demolition measure.
+Unit weight of the demolition material in accordance with DIN EN 1991-1-1: 25 kN/m³.
+Demolition thickness up to 100 cm.
+Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted.
+Collect removed materials without crushing, load onto the Contractor’s vehicle or stockpile temporarily.
+Disposal is paid for separately.
+Execution as per drawing: Drawing No.: “IseB BSK 01”""" ;
+  ci:descriptionGeneral "Demolish platform-edge foundation up to a height of 1 m" ;
+  ci:hasActivity casestudy:Activity_5 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M3> ;
+  ci:hasWork casestudy:Work_5 ;
+  ci:measurementRules "Determine the volume from the modelled object if “Zustand” = “Rueckbau”" ;
+  ci:partOf casestudy:CostItem_5 ;
+  ci:quantityUnitOfMeasure 1 ;
+  cterm:hasCategory cterm:Transport ;
+  cterm:hasFamily cterm:Infrastructure ;
+  cterm:hasObject casestudy:Railways ;
+.
+casestudy:CornerElement
+  rdf:type cterm:ObjectOfWorkOfConstructionWork ;
+  rdfs:label "CornerElement" ;
+.
+casestudy:CostItemToGeometryAssignment_1
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_1606> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_10
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2305> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_100
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7525> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_101
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7583> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_102
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7641> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_103
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7699> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_104
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7757> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_105
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7815> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_106
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7873> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_107
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7931> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_108
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7989> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_109
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8047> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_11
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2363> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_110
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8105> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_111
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8163> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_112
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8221> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_113
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8279> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_114
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8337> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_115
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8395> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_116
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8453> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_117
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8511> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_118
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8569> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_119
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8627> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_12
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2421> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_120
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8685> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_121
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8743> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_122
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8801> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_123
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8859> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_124
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8917> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_125
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_8975> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_126
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9033> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_127
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9091> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_128
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9149> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_129
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9207> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_13
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2479> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_130
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9265> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_131
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9323> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_132
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9381> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_133
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9439> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_134
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9497> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_135
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9555> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_136
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9613> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_137
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9671> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_138
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9729> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_139
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_9787> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_14
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2537> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_140
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_1547> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_141
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9835> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_142
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9860> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_143
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9885> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_144
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9910> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_145
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9935> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_146
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9960> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_147
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_9985> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_148
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10010> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_149
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10035> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_15
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2595> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_150
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10060> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_151
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10085> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_152
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10110> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_153
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10135> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_154
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10160> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_155
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10185> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_156
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10210> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_157
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10235> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_158
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10260> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_159
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10285> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_16
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2653> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_160
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10310> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_161
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10335> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_162
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10360> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_163
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10385> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_164
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10410> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_165
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10435> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_166
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10460> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_167
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10485> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_168
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10510> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_169
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10535> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_17
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2711> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_170
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10560> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_171
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10585> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_172
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10610> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_173
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10635> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_174
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10660> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_175
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10685> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_176
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10710> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_177
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10735> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_178
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10760> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_179
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10785> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_18
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2769> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_180
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10810> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_181
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10835> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_182
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10860> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_183
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10885> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_184
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10910> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_185
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10935> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_186
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10960> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_187
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_10985> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_188
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11010> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_189
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11035> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_19
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2827> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_190
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11060> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_191
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11085> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_192
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11110> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_193
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11135> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_194
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11160> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_195
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11185> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_196
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11210> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_197
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11235> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_198
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11260> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_199
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11285> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_2
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_1841> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_20
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2885> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_200
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11310> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_201
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11335> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_202
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11360> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_203
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11385> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_204
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11410> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_205
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11435> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_206
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11460> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_207
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11485> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_208
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11510> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_209
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11535> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_21
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2943> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_210
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11560> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_211
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11585> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_212
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11610> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_213
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11635> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_214
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11660> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_215
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11685> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_216
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11710> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_217
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11735> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_218
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11760> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_219
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11785> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_22
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3001> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_220
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11810> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_221
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11835> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_222
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11860> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_223
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11885> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_224
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11910> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_225
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11935> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_226
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11960> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_227
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_11985> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_228
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12010> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_229
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12035> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_23
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3059> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_230
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12060> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_231
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12085> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_232
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12110> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_233
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12135> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_234
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12160> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_235
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12185> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_236
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12210> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_237
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12235> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_238
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12260> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_239
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12285> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_24
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3117> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_240
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12310> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_241
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12335> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_242
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12360> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_243
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12385> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_244
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12410> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_245
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12435> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_246
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12460> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_247
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12485> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_248
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12510> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_249
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12535> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_25
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3175> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_250
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12560> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_251
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12585> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_252
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12610> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_253
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12635> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_254
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12660> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_255
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12685> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_256
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12710> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_257
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12735> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_258
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12760> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_259
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12785> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_26
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3233> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_260
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12810> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_261
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12835> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_262
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12860> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_263
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12885> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_264
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12910> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_265
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12935> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_266
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12960> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_267
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_12985> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_268
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13010> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_269
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13035> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_27
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3291> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_270
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13060> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_271
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13085> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_272
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13110> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_273
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13135> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_274
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13160> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_275
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13185> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_276
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13210> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_277
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13235> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_278
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_13260> ;
+  cr:refCostItem casestudy:CostItem_2 ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity 1 ;
+.
+casestudy:CostItemToGeometryAssignment_279
+  rdf:type cr:CostItemToGeometryAssignment ;
+  rdfs:label "Assignment of Precast Corner Element" ;
+  cr:refCostItem casestudy:CostItem_3 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_887> ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity "1"^^xsd:decimal ;
+.
+casestudy:CostItemToGeometryAssignment_28
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3349> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_280
+  rdf:type cr:CostItemToGeometryAssignment ;
+  rdfs:label "Assignment of Precast Corner Element" ;
+  cr:refCostItem casestudy:CostItem_3 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcBuildingElementProxy_18172> ;
+  cr:refParamFormula "Number of platform-edge elements" ;
+  cr:refParamQuantity "1"^^xsd:decimal ;
+.
+casestudy:CostItemToGeometryAssignment_29
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3407> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_3
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_1899> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_30
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3465> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_31
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3523> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_32
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3581> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_33
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3639> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_34
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3697> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_35
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3755> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_36
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3813> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_37
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3871> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_38
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3929> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_39
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_3987> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_4
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_1957> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_40
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4045> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_41
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4103> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_42
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4161> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_43
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4219> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_44
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4277> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_45
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4335> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_46
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4393> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_47
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4451> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_48
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4509> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_49
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4567> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_5
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2015> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_50
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4625> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_51
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4683> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_52
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4741> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_53
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4799> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_54
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4857> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_55
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4915> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_56
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_4973> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_57
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5031> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_58
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5089> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_59
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5147> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_6
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2073> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_60
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5205> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_61
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5263> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_62
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5321> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_63
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5379> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_64
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5437> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_65
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5495> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_66
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5553> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_67
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5611> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_68
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5669> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_69
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5727> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_7
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2131> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_70
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5785> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_71
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5843> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_72
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5901> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_73
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_5959> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_74
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6017> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_75
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6075> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_76
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6133> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_77
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6191> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_78
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6249> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_79
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6307> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_8
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2189> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_80
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6365> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_81
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6423> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_82
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6481> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_83
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6539> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_84
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6597> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_85
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6655> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_86
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6713> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_87
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6771> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_88
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6829> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_89
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6887> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_9
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_2247> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_90
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_6945> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_91
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7003> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_92
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7061> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_93
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7119> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_94
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7177> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_95
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7235> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_96
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7293> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_97
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7351> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_98
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7409> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItemToGeometryAssignment_99
+  rdf:type cr:CostItemToGeometryAssignment ;
+  cr:refCostItem casestudy:CostItem_1 ;
+  cr:refGeometry <http://linkedbuildingdata.net/ifc/resources20260119_225341/IfcSlab_7467> ;
+  cr:refParamFormula "Length (attribute: “DB_Laenge_Bauteil”) if “DB_Material_BSK_Fundament” = “DB_Fertigbeton”" ;
+  cr:refParamQuantity 0.99500000000000011 ;
+.
+casestudy:CostItem_1
+  rdf:type ci:CostItem ;
+  rdfs:label "CostItem_1" ;
+  ci:code "MLV-BSK_01130180" ;
+  ci:descriptionDetail """Precast foundation element for platform edge in BSK construction type
+Nominal height: 760 mm above top of rail, with user approvals from the DB InfraGO AG Business Unit Passenger Stations.
+Install a reinforced precast reinforced-concrete element, normal-weight concrete C30/37 in accordance with DIN EN 206-1 and DIN 1045-2, exposure classes XF1, XC2, WF, including recesses for dowelling/anchoring the precast platform-edge elements.
+Form the joint between the precast foundation element and the precast platform-edge element in accordance with the manufacturer’s installation instructions.
+Observe the manufacturer-specific installation and transport instructions.
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  ci:descriptionGeneral "Precast foundation element for platform edge H=760 mm C30/37" ;
+  ci:hasPart casestudy:ConstructionComponent_1 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M> ;
+  ci:prefix "EC3_2026" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:unitPrice "380"^^xsd:decimal ;
+.
+casestudy:CostItem_2
+  rdf:type ci:CostItem ;
+  rdfs:label "CostItem_2" ;
+  ci:code "MLV-BSK_01130050" ;
+  ci:descriptionDetail """Precast platform-edge element in BSK construction type with a nominal height of 760 mm above top of rail, with user approvals from the DB InfraGO AG Business Unit Passenger Stations, installed on a foundation.
+Installation dimensions in accordance with Ril 813.0201A03, including dowels on the foundation.
+At the time of material delivery, the Contractor shall provide the following documentation:
+- Certificate confirming the performance of internal and external quality monitoring/inspection
+- Proof/documentation for aggregates in accordance with DIN EN 12620 and the alkali guideline
+Execution as per drawing: Drawing No.: “IseB BSK 7600”""" ;
+  ci:descriptionGeneral "Precast platform edge BSK construction 760 mm above top of the rail" ;
+  ci:hasPart casestudy:ConstructionComponent_2 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/ONE> ;
+  ci:prefix "EC3_2026" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:unitPrice "430"^^xsd:decimal ;
+.
+casestudy:CostItem_3
+  rdf:type ci:CostItem ;
+  rdfs:label "CostItem_3" ;
+  ci:code "MLV-BSK_01130060" ;
+  ci:descriptionDetail """Corner element for the precast platform-edge element in BSK construction type with a nominal height of 760 mm above top of rail, installed on a foundation
+Installation dimensions in accordance with Ril 813.0201A03, including dowels on the foundation.
+At the time of material delivery, the Contractor shall provide the following documentation:
+Certificate confirming the performance of internal and external quality monitoring/inspection
+Proof/documentation for aggregates in accordance with DIN EN 12620 and the alkali guideline""" ;
+  ci:descriptionGeneral "Corner element – precast platform-edge element, 760 mm above top of rail" ;
+  ci:hasPart casestudy:ConstructionComponent_3 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/ONE> ;
+  ci:prefix "EC3_2026" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:unitPrice "970"^^xsd:decimal ;
+.
+casestudy:CostItem_4
+  rdf:type ci:CostItem ;
+  rdfs:label "CostItem_4" ;
+  ci:code "MLV-BSK_01840010" ;
+  ci:descriptionDetail """Demolition of platform edge and coping/cover stone, height above top of rail up to 1 m, made of reinforced concrete, as part of a total demolition measure.
+Unit weight of the demolition material in accordance with DIN EN 1991-1-1: 25 kN/m³.
+The foundation is paid for separately.
+Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted.
+Collect removed materials without crushing, load onto the Contractor’s vehicle or stockpile temporarily.
+Disposal is paid for separately.""" ;
+  ci:descriptionGeneral "Demolish platform edge up to a height of 1 m above top of rail" ;
+  ci:hasPart casestudy:ConstructionComponent_4 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M> ;
+  ci:prefix "EC3_2026" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:unitPrice "60"^^xsd:decimal ;
+.
+casestudy:CostItem_5
+  rdf:type ci:CostItem ;
+  rdfs:label "CostItem_5" ;
+  ci:code "MLV-BSK_01840050" ;
+  ci:descriptionDetail """Demolition of platform-edge foundation made of plain (unreinforced) or reinforced concrete, as part of a total demolition measure.
+Unit weight of the demolition material in accordance with DIN EN 1991-1-1: 25 kN/m³.
+Demolition thickness up to 100 cm.
+Use of plant/equipment is permitted; maximum gross weight of equipment: unrestricted.
+Collect removed materials without crushing, load onto the Contractor’s vehicle or stockpile temporarily.
+Disposal is paid for separately.
+Execution as per drawing: Drawing No.: “IseB BSK 01”""" ;
+  ci:descriptionGeneral "Demolish platform-edge foundation up to a height of 1 m" ;
+  ci:hasPart casestudy:ConstructionComponent_5 ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M3> ;
+  ci:prefix "EC3_2026" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:unitPrice "170"^^xsd:decimal ;
+.
+casestudy:DemolitionThickness
+  rdf:type cterm:DimensionParameterType ;
+  rdfs:label "DemolitionThickness" ;
+.
+casestudy:DimensionParameter_1
+  rdf:type cterm:DimensionParameter ;
+  rdfs:label "DimensionParameter_1" ;
+  cterm:hasUnit <http://qudt.org/vocab/unit/MilliM> ;
+  cterm:parameterSymbol1 "=" ;
+  cterm:parameterType cterm:Height ;
+  cterm:parameterValue1 "760" ;
+.
+casestudy:DimensionParameter_2
+  rdf:type cterm:DimensionParameter ;
+  rdfs:label "DimensionParameter_2" ;
+  cterm:hasUnit <http://qudt.org/vocab/unit/M> ;
+  cterm:parameterSymbol1 "<" ;
+  cterm:parameterType cterm:Height ;
+  cterm:parameterValue1 "1" ;
+.
+casestudy:DimensionParameter_3
+  rdf:type cterm:DimensionParameter ;
+  rdfs:label "DimensionParameter_3" ;
+  cterm:hasUnit <http://qudt.org/vocab/unit/CentiM> ;
+  cterm:parameterSymbol1 "<" ;
+  cterm:parameterType casestudy:DemolitionThickness ;
+  cterm:parameterValue1 "100" ;
+.
+casestudy:ForPrecastPlatformEdge
+  rdf:type cterm:UseOfWorkOfConstructionWork ;
+  rdfs:label "ForPrecastPlatformEdge" ;
+.
+casestudy:FunctionOfWorkOfConstructionWork_1
+  rdf:type cterm:FunctionOfWorkOfConstructionWork ;
+  rdfs:label "Function_1" ;
+.
+casestudy:PerformanceParameter_1
+  rdf:type cterm:PerformanceParameter ;
+  rdfs:label "PerformanceParameter" ;
+  cterm:hasParameterStandard casestudy:Standard_1 ;
+  cterm:hasParameterStandard casestudy:Standard_2 ;
+  cterm:parameterSymbol1 "=" ;
+  cterm:parameterType casestudy:StrenghtClass ;
+  cterm:parameterValue1 "C30/37" ;
+.
+casestudy:PerformanceParameter_2
+  rdf:type cterm:PerformanceParameter ;
+  rdfs:label "PerformanceParameter" ;
+  cterm:parameterSymbol1 "XF1/XC2/WF" ;
+  cterm:parameterType cterm:ExposureClass ;
+  cterm:parameterValue1 "=" ;
+.
+casestudy:PhysicalParameter_1
+  rdf:type cterm:PhysicalParameter ;
+  rdfs:label "PhysicalParameter_1" ;
+  cterm:hasParameterStandard casestudy:Standard_3 ;
+  cterm:parameterSymbol1 "=" ;
+  cterm:parameterType casestudy:UnitWeight ;
+  cterm:parameterValue1 "25" ;
+.
+casestudy:PlatformEdge
+  rdf:type cterm:ObjectOfWorkOfConstructionWork ;
+  rdfs:label "PlatformEdge" ;
+.
+casestudy:Precast
+  rdf:type cterm:TypeOfWorkOfConstructionWork ;
+  rdfs:label "Precast" ;
+.
+casestudy:PrecastCornerElement
+  rdf:type cterm:UseOfActivity ;
+  rdfs:label "PrecastCornerElement" ;
+.
+casestudy:PrecastFoundationElement
+  rdf:type cterm:UseOfActivity ;
+  rdfs:label "PrecastFoundationElement" ;
+.
+casestudy:PrecastPlatformEdge
+  rdf:type cterm:UseOfActivity ;
+  rdfs:label "PrecastPlatformEdge" ;
+.
+casestudy:ProductionResult_1
+  rdf:type ci:ProductionResult ;
+  ci:hasPart casestudy:ConstructionComponent_1 ;
+.
+casestudy:ProductionResult_2
+  rdf:type ci:ProductionResult ;
+  ci:hasPart casestudy:ConstructionComponent_2 ;
+.
+casestudy:ProductionResult_3
+  rdf:type ci:ProductionResult ;
+  ci:hasPart casestudy:ConstructionComponent_3 ;
+.
+casestudy:ProductionResult_4
+  rdf:type ci:ProductionResult ;
+  ci:hasPart casestudy:ConstructionComponent_4 ;
+.
+casestudy:ProductionResult_5
+  rdf:type ci:ProductionResult ;
+  ci:hasPart casestudy:ConstructionComponent_5 ;
+.
+casestudy:Railways
+  rdf:type cterm:ObjectOfCostComponent ;
+  rdfs:label "Railways" ;
+.
+casestudy:ReinforcedConcrete
+  rdf:type cterm:Material ;
+  rdfs:label "ReinforcedConcrete" ;
+.
+casestudy:Standard_1
+  rdf:type cterm:Standard ;
+  rdfs:label "Standard" ;
+  cterm:standardBody "DIN EN" ;
+  cterm:standardNumber 206 ;
+  cterm:standardPart 1 ;
+.
+casestudy:Standard_2
+  rdf:type cterm:Standard ;
+  rdfs:label "Standard" ;
+  cterm:standardBody "DIN EN" ;
+  cterm:standardNumber 1045 ;
+  cterm:standardPart 2 ;
+.
+casestudy:Standard_3
+  rdf:type cterm:Standard ;
+  rdfs:label "Standard" ;
+  cterm:standardBody "DIN EN" ;
+  cterm:standardNumber 1991 ;
+  cterm:standardPart 1 ;
+.
+casestudy:StrenghtClass
+  rdf:type cterm:PerformanceParameterType ;
+  rdfs:label "StrenghtClass" ;
+.
+casestudy:Work_1
+  rdf:type ci:WorkOfConstructionComponent ;
+  rdfs:label "Work_1" ;
+  ci:descriptionDetail """Precast foundation element for platform edge in BSK construction type
+Nominal height: 760 mm above top of rail, with user approvals from the DB InfraGO AG Business Unit Passenger Stations.
+Reinforced precast reinforced-concrete element, normal-weight concrete C30/37 in accordance with DIN EN 206-1 and DIN 1045-2, exposure classes XF1, XC2, WF, including recesses for dowelling/anchoring the precast platform-edge elements.""" ;
+  ci:descriptionGeneral "Precast foundation element for platform edge H=760 mm C30/37" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M> ;
+  ci:included "recesses for dowelling/anchoring the precast platform-edge elements" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs "nominal height value above top of rail,with user approvals from the DB InfraGO AG Business Unit Passenger Stations" ;
+  ci:workOf casestudy:ConstructionComponent_1 ;
+  cterm:hasCategory cterm:FoundationSystems ;
+  cterm:hasDimensionParameter casestudy:DimensionParameter_1 ;
+  cterm:hasFamily cterm:CivilEngineering ;
+  cterm:hasMaterial casestudy:ReinforcedConcrete ;
+  cterm:hasObject cterm:Foundation ;
+  cterm:hasPerformanceParameter casestudy:PerformanceParameter_1 ;
+  cterm:hasPerformanceParameter casestudy:PerformanceParameter_2 ;
+  cterm:hasType casestudy:Precast ;
+  cterm:hasUse casestudy:ForPrecastPlatformEdge ;
+.
+casestudy:Work_2
+  rdf:type ci:WorkOfConstructionComponent ;
+  rdfs:label "Work_2" ;
+  ci:descriptionDetail """Precast platform-edge element in BSK construction typewith a nominal height of 760 mm above top of rail, with user approvals from the DB InfraGO AG Business Unit Passenger Stations, 
+including dowels on the foundation.""" ;
+  ci:descriptionGeneral "Precast platform edge BSK construction 760 mm above top of the rail" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/ONE> ;
+  ci:included "dowels on the foundation" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs """nominal height value above top of rail,with user approvals from the DB InfraGO AG Business Unit Passenger Stations. 
+At the time of material delivery, the Contractor shall provide the following documentation:
+- Certificate confirming the performance of internal and external quality monitoring/inspection
+- Proof/documentation for aggregates in accordance with DIN EN 12620 and the alkali guideline""" ;
+  ci:workOf casestudy:ConstructionComponent_2 ;
+  cterm:hasCategory cterm:FoundationSystems ;
+  cterm:hasDimensionParameter casestudy:DimensionParameter_1 ;
+  cterm:hasFamily cterm:CivilEngineering ;
+  cterm:hasMaterial casestudy:ReinforcedConcrete ;
+  cterm:hasObject casestudy:PlatformEdge ;
+  cterm:hasType casestudy:Precast ;
+.
+casestudy:Work_3
+  rdf:type ci:WorkOfConstructionComponent ;
+  rdfs:label "Work_3" ;
+  ci:descriptionDetail """Corner element for the precast platform-edge element in BSK construction type with a nominal height of 760 mm above top of rail,
+including dowels on the foundation.""" ;
+  ci:descriptionGeneral "Corner element – precast platform-edge element, 760 mm above top of rail" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/ONE> ;
+  ci:included "dowels on the foundation" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs """nominal height value above top of rail,with user approvals from the DB InfraGO AG Business Unit Passenger Stations. 
+At the time of material delivery, the Contractor shall provide the following documentation:
+- Certificate confirming the performance of internal and external quality monitoring/inspection
+- Proof/documentation for aggregates in accordance with DIN EN 12620 and the alkali guideline""" ;
+  ci:workOf casestudy:ConstructionComponent_3 ;
+  cterm:hasCategory cterm:FoundationSystems ;
+  cterm:hasDimensionParameter casestudy:DimensionParameter_1 ;
+  cterm:hasFamily cterm:CivilEngineering ;
+  cterm:hasMaterial casestudy:ReinforcedConcrete ;
+  cterm:hasObject casestudy:CornerElement ;
+  cterm:hasType casestudy:Precast ;
+  cterm:hasUse casestudy:ForPrecastPlatformEdge ;
+.
+casestudy:Work_4
+  rdf:type ci:WorkOfConstructionComponent ;
+  rdfs:label "Work_4" ;
+  ci:descriptionDetail """Platform edge and coping/cover stone, height above top of rail up to 1 m, made of reinforced concrete. 
+Unit weight of the demolition material in accordance with DIN EN 1991-1-1: 25 kN/m³.""" ;
+  ci:descriptionGeneral "Platform edge up to a height of 1 m above top of rail" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M> ;
+  ci:included "coping/cover stone" ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:techSpecs "nominal height value above top of rail" ;
+  ci:workOf casestudy:ConstructionComponent_4 ;
+  cterm:hasCategory cterm:FoundationSystems ;
+  cterm:hasDimensionParameter casestudy:DimensionParameter_2 ;
+  cterm:hasFamily cterm:CivilEngineering ;
+  cterm:hasMaterial casestudy:ReinforcedConcrete ;
+  cterm:hasObject casestudy:PlatformEdge ;
+  cterm:hasPhysicalParameter casestudy:PhysicalParameter_1 ;
+  cterm:hasType casestudy:Precast ;
+.
+casestudy:Work_5
+  rdf:type ci:WorkOfConstructionComponent ;
+  rdfs:label "Work_5" ;
+  ci:descriptionDetail """Platform-edge foundation made of plain (unreinforced) or reinforced concrete. 
+Unit weight of the demolition material in accordance with DIN EN 1991-1-1: 25 kN/m³.
+Demolition thickness up to 100 cm.""" ;
+  ci:descriptionGeneral "Platform-edge foundation up to a height of 1 m" ;
+  ci:hasUnit <http://qudt.org/vocab/unit/M3> ;
+  ci:quantityUnitOfMeasure 1 ;
+  ci:workOf casestudy:ConstructionComponent_5 ;
+  cterm:hasCategory cterm:FoundationSystems ;
+  cterm:hasDimensionParameter casestudy:DimensionParameter_3 ;
+  cterm:hasFamily cterm:CivilEngineering ;
+  cterm:hasMaterial casestudy:ReinforcedConcrete ;
+  cterm:hasObject cterm:Foundation ;
+  cterm:hasPhysicalParameter casestudy:PhysicalParameter_1 ;
+  cterm:hasType casestudy:Precast ;
+  cterm:hasUse casestudy:ForPrecastPlatformEdge ;
+.
