@@ -1,7 +1,7 @@
 # Ontology-Based Cost Management for Infrastructure Projects  
 ## Case Study: German Railway Infrastructure
 
-This repository contains the datasets used in the research paper:
+This repository contains the datasets used in the EC3 2026 research paper:
 
 **Ontology-Based Cost Management Transferability in Infrastructure Projects:  
 A Case Study on German Railway Infrastructure**
@@ -9,8 +9,6 @@ A Case Study on German Railway Infrastructure**
 The project investigates the **transferability, applicability, scalability, and generalizability** of an existing ontology-based cost management approach—originally developed for building projects—when applied to **infrastructure projects** within a **different national regulatory framework**.
 
 The study focuses on **German railway infrastructure projects**, characterized by domain-specific standards, regulations, and cost management rules.
-
----
 
 ## Research Objectives
 
@@ -21,7 +19,6 @@ The main objectives of this research are to:
 - Test its **scalability** across standardized small-scale infrastructure projects
 - Demonstrate how ontology-based cost structures support **lifecycle-oriented cost development** and **semantic consistency**
 
----
 
 ## Methodological Background
 
@@ -33,9 +30,8 @@ The research builds on the ontology-based cost management approach proposed by *
 
 The approach does **not aim to standardize prices**, but rather to semantically structure cost item descriptions in order to enable consistent association, comparison, and updating of cost values across projects and national contexts.
 
----
 
-## 🗂 Repository Contents
+## Repository Contents
 
 This repository includes:
 
@@ -46,7 +42,6 @@ This repository includes:
 
 > **Note:** Unit prices are highly context-dependent and may not be directly reusable outside the original project conditions.
 
----
 
 ## Data Scope and Limitations
 
@@ -55,7 +50,6 @@ This repository includes:
 - Cost structures and classifications follow **German railway infrastructure regulations**
 - The repository does **not provide benchmark prices or commercial cost data**
 
----
 
 ## Reuse and Transferability
 
