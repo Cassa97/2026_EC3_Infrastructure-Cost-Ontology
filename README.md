@@ -22,7 +22,7 @@ The main objectives of this research are to:
 
 ## Methodological Background
 
-The research builds on the ontology-based cost management approach proposed by **Cassandro et al. (2023)**, with a strong emphasis on:
+The research builds on the ontology-based cost management approach proposed by **Cassandro et al. (2025)** DOI:https://ec-3.org/publications/conference/paper/?id=EC32025_263#:~:text=10.35490/EC3.2025.263, with a strong emphasis on:
 
 - Reuse of existing ontologies rather than developing isolated models
 - Semantic structuring of cost items and technical descriptions
